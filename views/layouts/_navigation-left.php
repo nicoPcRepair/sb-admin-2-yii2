@@ -41,23 +41,23 @@ $arrowIcon = FA::i('arrow')->tag('span');
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
-						['label' => 'Flot Charts', 'url' => ['/site/page', 'view' => 'flot']],
-						['label' => 'Morris.js Charts', 'url' => ['/site/page', 'view' => 'morris']],
+						['label' => 'Flot Charts', 'url' => ['../page', 'view' => 'flot']],
+						['label' => 'Morris.js Charts', 'url' => ['../page', 'view' => 'morris']],
 					],
-				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+				//array('label'=>'About', 'url'=>array('../page', 'view'=>'about')),
 				]) ?>
 			</li><!-- Charts -->
 			<li><?= Html::a(
 				FA::fw('table') . 'Tables',
-				Url::to(['/site/page', 'view' => 'tables'])
+				Url::to(['../page', 'view' => 'tables'])
 			) ?></li><!-- Tables -->
 			<li><?= Html::a(
 				FA::fw('edit') . 'Forms',
-				Url::to(['/site/page', 'view' => 'forms'])
+				Url::to(['../page', 'view' => 'forms'])
 			) ?></li><!-- Forms -->
 			<li><?= Html::a(
 				FA::fw('calendar') . 'Calendar',
-				Url::to(['/site/page', 'view' => 'calendar'])
+				Url::to(['../page', 'view' => 'calendar'])
 			) ?></li><!-- Calendar -->
 			<li>
 				<a href="#"><?= FA::fw('wrench') ?> UI Elements<?= $arrowIcon ?></a>
@@ -65,13 +65,13 @@ $arrowIcon = FA::i('arrow')->tag('span');
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
-						['label' => 'Panels and Wells', 'url' => ['/site/page', 'view' => 'panels-wells']],
-						['label' => 'Buttons', 'url' => ['/site/page', 'view' => 'buttons']],
-						['label' => 'Notifications', 'url' => ['/site/page', 'view' => 'notifications']],
-						['label' => 'Typography', 'url' => ['/site/page', 'view' => 'typography']],
-						['label' => 'Grid', 'url' => ['/site/page', 'view' => 'grid']],
+						['label' => 'Panels and Wells', 'url' => ['../page', 'view' => 'panels-wells']],
+						['label' => 'Buttons', 'url' => ['../page', 'view' => 'buttons']],
+						['label' => 'Notifications', 'url' => ['../page', 'view' => 'notifications']],
+						['label' => 'Typography', 'url' => ['../page', 'view' => 'typography']],
+						['label' => 'Grid', 'url' => ['../page', 'view' => 'grid']],
 					],
-				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+				//array('label'=>'About', 'url'=>array('../page', 'view'=>'about')),
 				]) ?>
 			</li><!-- UI Elements -->
 			<li>
@@ -80,11 +80,11 @@ $arrowIcon = FA::i('arrow')->tag('span');
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
-						['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
-						['label' => 'Font Awesome Examples', 'url' => ['/site/page', 'view' => 'font-awesome-examples']],
-						['label' => 'Glyphicons', 'url' => ['/site/page', 'view' => 'glyphicons']],
-						['label' => 'Flag Icon CSS', 'url' => ['/site/page', 'view' => 'flag-icon-css']],
-						['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
+						['label' => 'Font Awesome', 'url' => ['../page', 'view' => 'font-awesome']],
+						['label' => 'Font Awesome Examples', 'url' => ['../page', 'view' => 'font-awesome-examples']],
+						['label' => 'Glyphicons', 'url' => ['../page', 'view' => 'glyphicons']],
+						['label' => 'Flag Icon CSS', 'url' => ['../page', 'view' => 'flag-icon-css']],
+						['label' => 'Bootstrap Social', 'url' => ['../page', 'view' => 'bootstrap-social']],
 					],
 				]) ?>
 			</li><!-- Icons -->
@@ -122,7 +122,7 @@ $arrowIcon = FA::i('arrow')->tag('span');
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
-						['label' => 'Blank Page', 'url' => ['/site/page', 'view' => 'blank']],
+						['label' => 'Blank Page', 'url' => ['../page', 'view' => 'blank']],
 						[ // Signup Page for basic
 							'label' => '<span class="glyphicon glyphicon-user fa-fw"></span> Signup Page',
 							'url' => ['/site/signup'],

@@ -63,6 +63,16 @@ $config = [
             ],
         ],
         'db' => $db,
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            //'showScriptName' => false,
+            'enableStrictParsing' => false,
+            'rules' => [
+                '<alias:\w+>' => 'site/<alias>',
+                //'<action:(.*)>' => 'web/<action>',
+                //'<action:(.*)>' => 'site/<action>',
+            ],
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,

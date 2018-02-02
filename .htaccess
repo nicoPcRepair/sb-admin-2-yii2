@@ -1,6 +1,11 @@
+# prevent directory listings
+Options -Indexes
+IndexIgnore */*
+
+# follow symbolic links
+Options FollowSymlinks
 RewriteEngine on
-# If a directory or a file exists, use it directly
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-# Otherwise forward it to index.php
-RewriteRule . index.php
+#RewriteRule ^admin(/.+)?$ web/$1 [L,PT]
+
+#remove web/ in url :)
+RewriteRule ^(.+)?$ web/$1
