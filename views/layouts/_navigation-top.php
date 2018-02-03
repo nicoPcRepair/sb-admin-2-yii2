@@ -106,7 +106,7 @@ if (Yii::$app->user->isGuest) {
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-	<?= Html::a('P<sup>2</sup>SB Admin v2.0', Yii::$app->homeUrl, ['class' => 'navbar-brand']) ?>
+	<?= Html::a('P<sup>2</sup>SB Admin v2.0', Url::to(['../admin']), ['class' => 'navbar-brand']) ?>
 </div>
 
 <?php

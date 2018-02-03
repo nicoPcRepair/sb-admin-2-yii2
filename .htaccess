@@ -5,7 +5,10 @@ IndexIgnore */*
 # follow symbolic links
 Options FollowSymlinks
 RewriteEngine on
-#RewriteRule ^admin(/.+)?$ web/$1 [L,PT]
 
+
+#RewriteRule ^admin(/.+)?$ web/$1 [L,PT]
 #remove web/ in url :)
-RewriteRule ^(.+)?$ web/$1
+#RewriteRule ^(.+)?$ web/$1
+#RewriteRule ^(.*)$ web/$1
+#RewriteBase /basic-sb-admin-2-yii2/web/

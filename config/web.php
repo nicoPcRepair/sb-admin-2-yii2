@@ -1,5 +1,4 @@
 <?php
-
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
@@ -65,12 +64,13 @@ $config = [
         'db' => $db,
         'urlManager' => [
             'enablePrettyUrl' => true,
-            //'showScriptName' => false,
+            'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
                 '<alias:\w+>' => 'site/<alias>',
                 //'<action:(.*)>' => 'web/<action>',
                 //'<action:(.*)>' => 'site/<action>',
+                //'http://localhost/basic-sb-admin-2-yii2/' => 'http://localhost/basic-sb-admin-2-yii2/web/site/',
             ],
         ],
         /*
