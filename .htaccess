@@ -6,7 +6,6 @@ IndexIgnore */*
 Options FollowSymlinks
 RewriteEngine on
 
-
 #RewriteRule ^admin(/.+)?$ web/$1 [L,PT]
 #remove web/ in url :)
 #RewriteRule ^(.+)?$ web/$1
