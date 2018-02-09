@@ -13,7 +13,8 @@ $config = [
     ],
     'components' => [
         'assetManager' => [
-            'bundles' => [
+            'bundles' => 
+            [
                 'yii\web\JqueryAsset' => [
                     'sourcePath' => null, 'js' => [],
                 ],
@@ -28,6 +29,13 @@ $config = [
                 ],
                 '\rmrevin\yii\fontawesome\AssetBundle' => [
                     'sourcePath' => null, 'css' => [],
+                ],
+                'dosamigos\google\maps\MapAsset' => [
+                    'options' => [
+                        'key' => 'AIzaSyAz7cV-NIw0RUEGCZiDwgoDLte3qQmKtpQ',
+                        'language' => 'fr',
+                        'version' => '3.1.18'
+                    ]
                 ],
             ],
         ],        

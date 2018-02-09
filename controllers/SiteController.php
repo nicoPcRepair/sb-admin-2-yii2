@@ -44,6 +44,7 @@ class SiteController extends Controller
     public function actions()
     {
         return [
+
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
@@ -53,7 +54,7 @@ class SiteController extends Controller
             ],
             'page' => [
                 'class' => 'yii\web\ViewAction',
-            ],
+            ]
         ];
     }
 
@@ -105,6 +106,7 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
+    /*
     public function actionContact()
     {
         $model = new ContactForm();
@@ -117,16 +119,19 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+    */
 
     /**
      * Displays about page.
      *
      * @return string
      */
+    /*
     public function actionAbout()
     {
         return $this->render('about');
     }
+    */
 
 
 
